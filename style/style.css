@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.nav-link:hover{
+  cursor: pointer;
+}
+
+span{
+  font-family: 'Electrolize', sans-serif;
+  
+}
+
+.switch {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 23px;
+    float: right;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bc2323;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3df321;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .card{
+      padding-left: 1rem;
+  }
+
+  .card-button{
+      color: #3df321;
+      max-width: 10rem;;
+      margin: auto;
+      margin-bottom: .5rem;
+  }
+
+  .card-header{
+      font-size: 1rem;
+  }
+
+  .loadimg{
+      max-width: 5rem;
+      display: block;
+      margin: auto;
+  }
+
+  .coin-icon{
+    max-width: 10rem;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+  }
+
+  .modal-style{
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .modal-content{
+    max-width: 70%;
+    margin: auto;
+  }
+
+  label.switch.in-modal{
+    margin-bottom: 0;
+    margin: auto 0;
+    line-height: 28px; 
+  }
+  div.in-modal{
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .popout{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.705);
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    align-items: center;
+    padding-top: auto;
+  }
+
+  .loadimg-wrapper{
+    position:fixed;
+    left:50%;
+    top: 50%;
+    z-index: 2000;
+    height: 20%;
+  }
+  .loadimg-popout{
+    max-width: 10rem;
+    position:relative; 
+    left:-50%; 
+    top: -50%; 
+    z-index: 2000;
+}
+.parallax {
+  background-image: url("../assets/stock-vector-cryptocurrency-logo-collected-the-main-1910148376.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_img{
+  border-radius: 50%;
+  max-width: 100%;
+  position: absolute;
+  top: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.about_img_wrapper{
+  padding: auto auto;
+}
+
+#aboutContainer {
+  background-color: rgb(6, 5, 5);
+  color: white;
+  padding: 1rem;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0;
+}
+
+#homeContainer, #chartContainer{
+  margin: 0;
+}
+
+.canvasjs-chart-tooltip{
+  margin-bottom: 380px;
+}
